@@ -126,3 +126,4 @@ C:\Users\fernando.zhunio\Documents\Fernando Zhunio\trabajos\evaluacion\evaluacio
 C:\Users\fernando.zhunio\Documents\Fernando Zhunio\trabajos\evaluacion\evaluacion_api\evaluacion_api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\fernando.zhunio\Documents\Fernando Zhunio\trabajos\evaluacion\evaluacion_api\evaluacion_api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\fernando.zhunio\Documents\Fernando Zhunio\trabajos\evaluacion\evaluacion_api\evaluacion_api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\fernando.zhunio\Documents\Fernando Zhunio\trabajos\evaluacion\evaluacion_api\evaluacion_api\obj\Debug\net8.0\evaluacion_api.sourcelink.json

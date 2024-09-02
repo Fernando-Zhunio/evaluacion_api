@@ -51,6 +51,39 @@ namespace evaluacion_api.Controllers
 			return inputHtml;
 		}
 
+		[HttpPatch("Inputs/{id}")]
+		public async Task<ActionResult<InputHtml>> Update(int id, InputStoreRequest request)
+		{
+			var input = context.InputHtmls.FirstOrDefault(x => x.Id == id);
+			if (input == null) return NotFound();
+			InputHtml inputHtml = new InputHtml
+			{
+				Id = id,
+				formHtmlId = request.formHtmlId,
+				label = request.label,
+				name = request.name,
+				placeholder = request.placeholder,
+				type = request.type,
+				value = request.value,
+			};
+
+			input = inputHtml;
+			await context.SaveChangesAsync();
+			return inputHtml;
+		}
+
+		[HttpDelete("Inputs/{id}")]
+		public async Task<ActionResult<InputHtml>> Delete(int id)
+		{
+			var input = context.InputHtmls.FirstOrDefault(x => x.Id == id);
+			if (input == null) { return NotFound(); }
+
+			context.InputHtmls.Remove(input);
+			await context.SaveChangesAsync();
+			
+			return Ok(new { Message = "Eliminado con exito" });
+		}
+
 
 
 		// GET: EvaluacionController/Details/5
